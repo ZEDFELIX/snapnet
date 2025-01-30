@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snapnet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Snap Net</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#teachers">Teachers</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#hire">Add Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="container">
+            <div class="home-content">
+                <h2>Welcome to Snap net </h2>
+                <p>Your gateway to connect with the best fit and highly qualified personel.</p>
+                <a href="#hire" class="cta-button">Hire Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Us</h2>
+            </div>
+            <div class="section-content">
+                <p>SNAP NET is a platform that connects learners with qualified teachers and various services from around the world. <br>Whether you're a student looking for a job or an expert offering your knowledge, snap net is the place to be.</p>
+            </div>
+        </div>
+    </section>
+<!-- Profile Section (My Profile Space) -->
+<section id="my-profile" class="section">
+    <div class="container">
+        <div class="section-title">
+            <h2>My Profiles</h2>
+        </div>
+        
+        <!-- Profile Boxes Container -->
+        <div id="profile-container" class="profile-container">
+            <!-- First Profile Box (Visible initially) -->
+            <div class="profile-box active">
+                <div class="profile-image">
+                    <img src="C:\Users\Felix Simon\Desktop\roundry website\images\5.jpeg" alt="Profile Picture" class="profile-img">
+                </div>
+                <div class="profile-details">
+                    <h3>Felix Simon</h3>
+                    <p><strong>Location:</strong> Your Location, Country</p>
+                    <p><strong>Email:</strong> felixsimon877@gmail.com</p>
+                    <p><strong>phone :</strong>0711423465</p>
+                    <p><strong>About Me:</strong> A brief introduction about yourself.</p>
+                    <button class="cta-button" onclick="slideProfile()">Next Profile</button>
+                </div>
+            </div>
+
+            <!-- Second Profile Box (Hidden initially) -->
+            <div class="profile-box">
+                <div class="profile-image">
+                    <img src="C:\Users\Felix Simon\Desktop\roundry website\images\5.jpeg" alt="Profile Picture" class="profile-img">
+                </div>
+                <div class="profile-details">
+                    <h3>joy njoki</h3>
+                    <p><strong>Location:</strong>kiambu, kirigiti</p>
+                    <p><strong>Email:</strong> johndoe@example.com</p>
+                    <p><strong>phone :</strong>0711423465</p>
+                    <p><strong>About Me:</strong>i am young dedicated personel with an ambition.</p>
+                    <button class="cta-button" onclick="slideProfile()">Next Profile</button>
+                </div>
+            </div>
+            <div class="profile-box">
+                <div class="profile-image">
+                    <img src="C:\Users\Felix Simon\Desktop\roundry website\images\5.jpeg" alt="Profile Picture" class="profile-img">
+                </div>
+                <div class="profile-details">
+                    <h3>John Doe</h3>
+                    <p><strong>Location:</strong> Another Location, Country</p>
+                    <p><strong>Email:</strong> johndoe@example.com</p>
+                    <p><strong>phone :</strong>0711423465</p>
+                    <p><strong>About Me:</strong> A brief introduction about John.</p>
+                    <button class="cta-button" onclick="slideProfile()">Next Profile</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Teachers Section -->
+    <section id="teachers" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Meet Teachers</h2>
+            </div>
+            <div class="section-content">
+                <p>Our teachers are highly qualified professionals with years of experience in various fields. Whether you need help with math, language, or creative subjects, we have experts ready to assist you!</p>
+                <a href="javascript:void(0);" class="cta-button" onclick="showTeachers()">View Teachers</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="section-content">
+                <p>We'd love to hear from you. If you have any questions, suggestions, or just want to chat, feel free to reach out!</p>
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hire Me Section -->
+    <section id="hire" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Add Me</h2>
+            </div>
+            <div class="section-content">
+                <p>Looking for a job? Click the button below to get started and get hired Today</p>
+                <a href="javascript:void(0);" class="cta-button" onclick="hireMe()">Create Account</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Roundly People and Teachers | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
