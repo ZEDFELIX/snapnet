@@ -7,22 +7,27 @@ function showTeachers() {
 function hireMe() {
     alert('Thank you for your interest! We will get in touch soon.');
 }
+
 // Function to slide to the next profile
 function slideProfile() {
     // Get the profile container and all profile boxes
     var profileContainer = document.getElementById('profile-container');
+    if (!profileContainer) return;
+
     var profiles = profileContainer.getElementsByClassName('profile-box');
-    
+
     // Find the current active profile box
     var currentProfile = profileContainer.querySelector('.active');
-    
+
     // Find the next profile box, or loop back to the first profile if it's the last one
     var nextProfile = currentProfile.nextElementSibling || profiles[0];
-    
+
     // Remove the active class from the current profile and add it to the next profile
     currentProfile.classList.remove('active');
     nextProfile.classList.add('active');
 }
 
-// Set the first profile as active initially
-document.querySelector('.profile-box').classList.add('active');
+// Set the first profile as active once the DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.profile-box')?.classList.add('active');
+});
